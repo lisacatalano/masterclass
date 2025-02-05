@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import { RouterView } from 'vue-router';
+
 </script>
 
 <template>
-  <h1>Welcome to Pulse</h1>
+  <main>
+    <RouterView />
+  </main>
 </template>
