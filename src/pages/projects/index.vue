@@ -11,14 +11,11 @@ const projects = ref<Tables<'projects'>[] | null>(null);
   if (error) console.log(error);
 
   projects.value = data;
-
-  console.log('projects: ', projects.value);
 })();
 </script>
 <template>
   <div>
     <h1>Projects Page</h1>
-    <RouterLink to="/">Home</RouterLink>
     <ul>
       <li v-for="project in projects" :key="project.id">
         {{ project.name }}
