@@ -8,6 +8,7 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 // vite.config.ts
 import AutoImport from 'unplugin-auto-import/vite';
 import { VueRouterAutoImports } from 'unplugin-vue-router';
+import Components from 'unplugin-vue-components/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -19,6 +20,9 @@ export default defineConfig({
           isCustomElement: (element) => element.startsWith('iconify-icon'),
         },
       },
+    }),
+    Components({
+      /* options */
     }),
     AutoImport({
       // targets to transform
