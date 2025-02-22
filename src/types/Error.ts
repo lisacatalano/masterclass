@@ -4,6 +4,6 @@ export interface CustomError extends Error {
   customCode?: number;
 }
 
-export interface ExtendedPostgretError extends PostgrestError {
+export interface ExtendedPostgrestError extends PostgrestError {
   statusCode?: number;
 }

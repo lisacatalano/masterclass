@@ -13,7 +13,6 @@ const getTasks = async () => {
 }
 
 await getTasks();
-
 </script>
 <template>
   <div>
